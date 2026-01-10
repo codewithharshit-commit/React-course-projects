@@ -1,12 +1,15 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 function App() {
-  let fruitItems = ["mango", "banana", "orange"];
+  let fruitItems = [];
+
   return (
     <>
+      <h1>Healthy Food</h1>
+      {fruitItems.length === 0 ? <h2>I am Hungry</h2> : null}
       <ul>
         {fruitItems.map((items) => (
-          <li>{items}</li>
+          <li key={items}>{items}</li>
         ))}
       </ul>
     </>
