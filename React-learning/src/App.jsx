@@ -1,17 +1,12 @@
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-function App() {
-  let fruitItems = [];
+import "tailwindcss";
 
+function App() {
   return (
     <>
-      <h1>Healthy Food</h1>
-      {fruitItems.length === 0 ? <h2>I am Hungry</h2> : null}
-      <ul>
-        {fruitItems.map((items) => (
-          <li key={items}>{items}</li>
-        ))}
-      </ul>
+      <h1 className="text-green-700">Hello world</h1>
+      <h1 className="bg-amber-400 text-white">Tailwind css</h1>
+      <div className="border-4 border-red-600"></div>
     </>
   );
 }
