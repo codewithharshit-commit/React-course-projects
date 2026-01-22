@@ -22,4 +22,13 @@
     display: none;
 }
 
+.pop-up{
+    transform: scale(0);
+    
+}
+
+.pop-up.open{
+    transform: scale(1);
+}
+
 

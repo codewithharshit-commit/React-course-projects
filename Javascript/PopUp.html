@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Heebo:wght@100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#DECDAC]">
+    <div class="bg-[#FEFAF3] w-121.25 h-60.75 rounded-3xl fixed inset-0 m-auto flex justify-center items-center 
+    shadow-[0px_2.81px_2.81px_0px_#00000040]">
+        <button class="bg-[#EBBF53] w-[285px] h-[63px] rounded-4xl text-[#FEFAF3] font-normal text-[28px] font-[Pacifico]">Get Newsletter</button>
+    </div>
+
+    <div class="w-[690px] h-[346px] bg-[#FEFAF3] rounded-3xl shadow-[0px_2.81px_2.81px_0px_#00000040] fixed inset-0 m-auto pop-up transition-transform duration-150 ease-in-out">
+        <div class="ml-15 -translate-y-10">
+            <img src="./Group 1.svg" alt="svg">
+        </div>
+       
+        <h1 class="absolute font-[Inika] top-20 left-85 font-normal text-[40px]">
+            Don’t miss out.</h1>
+        <p class="w-[270px] font-normal h-[23px] font-[Inika] absolute top-30 left-85 mt-6 text-[18px]">Sign up for our newsletter to stay in the loop.</p>
+        
+        <div class="absolute right-6 top-4 text-[#AFA187] w-3.5 h-3.5">
+            <img src="./Vector.svg" class="close-icon" alt="">
+        </div>
+
+        <div class="flex justify-between items-center w-[560px] h-[56px] bg-[#EEE8DD] border-2 border-[#AFA187] rounded-3xl mx-auto mt-5">
+            <input type="text" placeholder="EMAIL ADDRESS" class="placeholder:font-[Heebo] ml-20 outline-none ">
+            <button class="w-[179px] bg-[#EBBF53] h-full rounded-br-3xl rounded-tr-3xl text-white border-none">SUBSCRIBE</button>
+        </div>
+    </div>
+    <script>
+        const button = document.querySelector('button');
+        const popUp = document.querySelector('.pop-up');
+        const closeIcon = document.querySelector('.close-icon')
+
+        button.addEventListener('click',()=>{
+            popUp.classList.add('open');
+        })
+
+        closeIcon.addEventListener('click',()=>{
+            popUp.classList.remove('open')
+        })
+    </script>
+</body>
+</html>
