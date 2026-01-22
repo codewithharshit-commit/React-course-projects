@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+.check-icon{
+    display: none;
+}
+
+.completed .check-icon{
+    display:block;
+}
+
+
+.completed .check-box{
+    background-color: #48A300;
+}
+
+.completed .input-box{
+    color:#48A300;
+    text-decoration: line-through;
+}
+
+.error-label{
+    display: none;
+}
+
+
